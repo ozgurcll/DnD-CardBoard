@@ -1,0 +1,743 @@
+fileFormatVersion: 2
+guid: db800b81fae9c44c89fbb89ea1e3632d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: squareCircle_vector_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1604
+        width: 504
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f8b044968164e658db9f5e371f5321
+      internalID: -1862289053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_1
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 1602
+        width: 505
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18502c0d93f2e47789f8807b2ec09fe1
+      internalID: 1057249006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_2
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 1602
+        width: 506
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59352a888078d48b680ee243974a4f6c
+      internalID: -1729637730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_3
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 1602
+        width: 506
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4bed2bd12d840eeaab17b61b354610
+      internalID: -1727797745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_4
+      rect:
+        serializedVersion: 2
+        x: 2056
+        y: 1602
+        width: 506
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467039016d545469f89767de3aff3506
+      internalID: -838825358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_5
+      rect:
+        serializedVersion: 2
+        x: 2566
+        y: 1604
+        width: 506
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4620f4aab09e417f9628c6d431e9269
+      internalID: 1195518025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_6
+      rect:
+        serializedVersion: 2
+        x: 3076
+        y: 1604
+        width: 505
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72807b2ba21c4b8088fbb4614674422
+      internalID: 95751316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_7
+      rect:
+        serializedVersion: 2
+        x: 3587
+        y: 1604
+        width: 504
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251f2ae71e67645c987caaf17d5082bb
+      internalID: -212668839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_8
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1092
+        width: 504
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90fb4a83ae2314dcb9e84e5a58a2b892
+      internalID: 964074605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_9
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 1092
+        width: 505
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3881093329fec4004bd0e1077b477e95
+      internalID: -2080458634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_10
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 1092
+        width: 506
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e47503572401b45f192de82882b3975a
+      internalID: 1859690393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_11
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 1092
+        width: 506
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de9ad3476e6947afa83383e3f387e2f
+      internalID: 1821099492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_12
+      rect:
+        serializedVersion: 2
+        x: 2056
+        y: 1092
+        width: 506
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f593148d6454044d9a7f195b2c56704a
+      internalID: 657303834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_13
+      rect:
+        serializedVersion: 2
+        x: 2588
+        y: 1092
+        width: 464
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace2a020544fd4d089f963707c291106
+      internalID: -1770432736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_14
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 1090
+        width: 491
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88521af28fd0144c5b42838a400c841d
+      internalID: -1947324763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_15
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 549
+        width: 504
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64fb531b4e4ff4724a9a5929862db662
+      internalID: -1768687770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_16
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 549
+        width: 505
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661c0546b4380446fb2bf4fe74c5a797
+      internalID: -451751743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_17
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 549
+        width: 504
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c9feae322d540af8e038ac6c720638
+      internalID: 740957701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_18
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 549
+        width: 506
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76eb1618476d447028b5b0c21989aaa8
+      internalID: 950720412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_19
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 549
+        width: 504
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51711ed1d384b439e9420b9a55f5cfeb
+      internalID: 918788847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_20
+      rect:
+        serializedVersion: 2
+        x: 2612
+        y: 547
+        width: 505
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d45ac0fb70194ceaab47cf246d8aa08
+      internalID: -413606314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_21
+      rect:
+        serializedVersion: 2
+        x: 3131
+        y: 547
+        width: 506
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a96dfa889ef496bacd9f601d4f6c6a
+      internalID: -127829197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_22
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 5
+        width: 506
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa3253a12de14f369377be66cac2147
+      internalID: 252869964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_23
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 5
+        width: 505
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf426039d5d32426f83ccf4f595414ed
+      internalID: -1862225217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_24
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 5
+        width: 504
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c489cd30aa82b46fbb49b667123a62a5
+      internalID: 889377056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_25
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 5
+        width: 506
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3f33525ba5a4fdfa6013340335dfba
+      internalID: 970845615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_26
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 5
+        width: 506
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5cd419e191054c82b1d18772313b911
+      internalID: 300539014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareCircle_vector_27
+      rect:
+        serializedVersion: 2
+        x: 2675
+        y: 21
+        width: 504
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca19b1dd8c3e42b2b7b7d493c2590ed
+      internalID: 1297008289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 99c9b392e79c2420b810304d6d0508d2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      squareCircle_vector_0: -1862289053
+      squareCircle_vector_1: 1057249006
+      squareCircle_vector_10: 1859690393
+      squareCircle_vector_11: 1821099492
+      squareCircle_vector_12: 657303834
+      squareCircle_vector_13: -1770432736
+      squareCircle_vector_14: -1947324763
+      squareCircle_vector_15: -1768687770
+      squareCircle_vector_16: -451751743
+      squareCircle_vector_17: 740957701
+      squareCircle_vector_18: 950720412
+      squareCircle_vector_19: 918788847
+      squareCircle_vector_2: -1729637730
+      squareCircle_vector_20: -413606314
+      squareCircle_vector_21: -127829197
+      squareCircle_vector_22: 252869964
+      squareCircle_vector_23: -1862225217
+      squareCircle_vector_24: 889377056
+      squareCircle_vector_25: 970845615
+      squareCircle_vector_26: 300539014
+      squareCircle_vector_27: 1297008289
+      squareCircle_vector_3: -1727797745
+      squareCircle_vector_4: -838825358
+      squareCircle_vector_5: 1195518025
+      squareCircle_vector_6: 95751316
+      squareCircle_vector_7: -212668839
+      squareCircle_vector_8: 964074605
+      squareCircle_vector_9: -2080458634
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
