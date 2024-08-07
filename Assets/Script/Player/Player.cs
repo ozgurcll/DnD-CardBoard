@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
 
     public GridBehavior gridBehavior;
     public CardManager cardManager;
+    public CardActions cardActions;
 
 
     private void Start()
@@ -26,6 +27,7 @@ public class Player : MonoBehaviour
         stats = GetComponent<CharacterStats>();
 
         cardManager = CardManager.instance;
+        cardActions = CardActions.instance;
     }
 
     public void CardRange(int range)

@@ -38,7 +38,7 @@ public class PlayerAttackActions : MonoBehaviour
                 if (hit.collider.gameObject.CompareTag("Player") && player.stats.isAttack)
                 {
                     UpdatePlayerStatus(hit);
-                    ApplyBuffPlayer(hit);
+                    // ApplyBuffPlayer(hit);
                 }
         }
         return hit;
@@ -90,24 +90,24 @@ public class PlayerAttackActions : MonoBehaviour
         player.stats.isAttack = false;
         player.uI.attackImage.gameObject.SetActive(false);
 
-        player.cardManager.selectedCard.ApplyCardEffect(hit); // Düşmana Tıkladığımız Zaman Kart Efekti
+        player.cardActions.ApplyCardEffects(hit); // Düşmana Tıkladığımız Zaman Kart Efekti
 
         StartCoroutine(ApplyHitEffect(hit)); // Düşmana Tıkladığımız Zaman Kırmızı Beyaz Titreşim Efekti
         int slotIndex = Array.IndexOf(player.cardManager.cardSlots, player.cardManager.selectedCard.transform.parent);
         player.cardManager.UseCard(slotIndex);
     }
 
-    private void ApplyBuffPlayer(RaycastHit hit)
-    {
-        player.stats.isAttack = false;
-        player.uI.attackImage.gameObject.SetActive(false);
+    // private void ApplyBuffPlayer(RaycastHit hit)
+    // {
+    //     player.stats.isAttack = false;
+    //     player.uI.attackImage.gameObject.SetActive(false);
 
-        player.cardManager.selectedCard.ApplyCardEffect(hit); // Düşmana Tıkladığımız Zaman Kart Efekti
+    //     CardActions.instance.ApplyCardEffects(hit); // Düşmana Tıkladığımız Zaman Kart Efekti
 
-        StartCoroutine(ApplyHitEffect(hit)); // Düşmana Tıkladığımız Zaman Kırmızı Beyaz Titreşim Efekti
-        int slotIndex = Array.IndexOf(player.cardManager.cardSlots, player.cardManager.selectedCard.transform.parent);
-        player.cardManager.UseCard(slotIndex);
-    }
+    //     StartCoroutine(ApplyHitEffect(hit)); // Düşmana Tıkladığımız Zaman Kırmızı Beyaz Titreşim Efekti
+    //     int slotIndex = Array.IndexOf(player.cardManager.cardSlots, player.cardManager.selectedCard.transform.parent);
+    //     player.cardManager.UseCard(slotIndex);
+    // }
 
     private void UpdateEnemyStatus(RaycastHit hit)
     {

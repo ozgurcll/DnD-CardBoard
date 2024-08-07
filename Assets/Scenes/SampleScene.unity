@@ -12296,7 +12296,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00012207031, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &695992646
@@ -17643,7 +17643,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.30070338, y: -3e-45, z: 1e-45, w: 0.9537177}
+  m_LocalRotation: {x: 0.30070338, y: 1e-45, z: -0, w: 0.9537177}
   m_LocalPosition: {x: 17.693344, y: -1.4099998, z: -27.159729}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -20146,6 +20146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1094875962}
   - component: {fileID: 1094875963}
+  - component: {fileID: 1094875964}
   m_Layer: 0
   m_Name: CardManager
   m_TagString: Untagged
@@ -20198,10 +20199,10 @@ MonoBehaviour:
   - {fileID: 877650837}
   nextCardSlot: {fileID: 1540996501}
   selectedCards:
-  - {fileID: 11400000, guid: 104f154e6d4eb443ab17083d9a034c8d, type: 2}
-  - {fileID: 11400000, guid: 76dd20e81fa654a889946d92b2b263b9, type: 2}
-  - {fileID: 11400000, guid: 76dd20e81fa654a889946d92b2b263b9, type: 2}
-  - {fileID: 11400000, guid: 104f154e6d4eb443ab17083d9a034c8d, type: 2}
+  - {fileID: 11400000, guid: cb245d3fe38ab4e0a860369f3c451071, type: 2}
+  - {fileID: 11400000, guid: 562d13e33d3604892b0fbaa29cf51351, type: 2}
+  - {fileID: 11400000, guid: c9cb5ba7973e54b42acdbe520b9c1cb9, type: 2}
+  - {fileID: 11400000, guid: a2157a50b164441ecbadff2fe2c03de4, type: 2}
   - {fileID: 11400000, guid: 6a7da6477acd64e1eae825efaaf6044c, type: 2}
   - {fileID: 11400000, guid: f313e4fbe50424657b1e9e6bfcea2675, type: 2}
   - {fileID: 11400000, guid: 104f154e6d4eb443ab17083d9a034c8d, type: 2}
@@ -20210,6 +20211,20 @@ MonoBehaviour:
   nextCard: {fileID: 0}
   waitingCards: []
   selectedCard: {fileID: 0}
+--- !u!114 &1094875964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094875961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63130533b442d418c8e7277216e0af9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardData: {fileID: 0}
+  speed: 8
 --- !u!1 &1095257837 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: d3d2f02625d2649879613782c7a7bffd, type: 3}
@@ -20302,6 +20317,62 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7727fe32e1259674296671ee825dad80, type: 3}
+--- !u!1 &1102310322
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1102310323}
+  - component: {fileID: 1102310324}
+  m_Layer: 0
+  m_Name: LastCardUsed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1102310323
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102310322}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1285288495}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1102310324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102310322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2d4c3e5bfeff43dfa06cd808b5a3a30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lastUsedCardData: {fileID: 0}
+  cardRarely: 0
+  cardType: 0
+  damageType: 0
+  damage: 0
+  shield: 0
+  heal: 0
+  haveStatus: 0
+  statusTurn: 0
+  statusDamage: 0
+  cardEffect: {fileID: 0}
+  statusEffect: {fileID: 0}
 --- !u!1001 &1104001978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25050,6 +25121,7 @@ Transform:
   - {fileID: 1094875962}
   - {fileID: 462136341}
   - {fileID: 1690172727}
+  - {fileID: 1102310323}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1289367776 stripped
@@ -33452,7 +33524,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1678284318}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.30070338, y: -3e-45, z: 1e-45, w: 0.9537177}
+  m_LocalRotation: {x: 0.30070338, y: 1e-45, z: -0, w: 0.9537177}
   m_LocalPosition: {x: 17.693344, y: -1.4099998, z: -27.159729}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -34710,7 +34782,7 @@ Transform:
   m_GameObject: {fileID: 1720481165}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

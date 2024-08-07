@@ -46,6 +46,16 @@ public class CardManager : MonoBehaviour
             return;
         }
 
+        // Fisher-Yates algoritması ile karıştırma
+        for (int i = selectedCards.Count - 1; i > 0; i--)
+        {
+            int j = Random.Range(0, i + 1);
+            CardData temp = selectedCards[i];
+            selectedCards[i] = selectedCards[j];
+            selectedCards[j] = temp;
+        }
+
+        // Karıştırılmış kartları yerleştirme
         for (int i = 0; i < cardSlots.Length; i++)
         {
             currentCards.Add(selectedCards[i]);
@@ -115,6 +125,7 @@ public class CardManager : MonoBehaviour
         }
 
         waitingCards.Add(selectedCard.cardData);
+        LastCardUsed.instance.SetLastCardUsed(selectedCard.cardData);
         selectedCard.ResetRange();
         selectedCard = null;
 

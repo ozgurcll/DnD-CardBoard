@@ -46,5 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   speed: 50
-  damageEffect: {fileID: 6104878188644920555, guid: 0c2ab2a94d5ed460491b55d7e6bd0e2a, type: 3}
-  statusEffect: {fileID: 8093282458767288019, guid: 04ce00349afee44cf957f2d2f2c55e8a, type: 3}
+  damageEffect: {fileID: 100006, guid: 2a474af3f4c27be4e9bdce39cfe4315d, type: 3}

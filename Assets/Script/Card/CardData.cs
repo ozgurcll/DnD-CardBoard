@@ -60,12 +60,13 @@ public class CardData : ScriptableObject
     public bool haveStatus;
     public int statusTurn;
     public int statusDamage;
-    public GameObject statusEffect;
     #endregion
 
     [Header("Card Effects")]
     #region Card Effects
+    public GameObject statusEffect;
     public GameObject cardEffect;
+    public GameObject cardDamageEffect;
 
     #endregion
 }

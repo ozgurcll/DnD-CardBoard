@@ -53,4 +53,8 @@ MonoBehaviour:
   damage: 2
   shield: 0
   heal: 0
+  haveStatus: 0
+  statusTurn: 0
+  statusDamage: 0
+  statusEffect: {fileID: 0}
   cardEffect: {fileID: 8205763835223205524, guid: 6c71d3922813647a3b8f407a04ac2cde, type: 3}
