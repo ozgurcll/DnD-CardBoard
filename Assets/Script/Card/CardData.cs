@@ -42,7 +42,7 @@ public class CardData : ScriptableObject
     public Sprite[] cardTypeIcon;
     public Sprite[] cardFrame;
     public Sprite cardIcon;
-    public int actionCost;
+    public int mana;
     public int range;
     [Header("Downside")]
     public Sprite[] evoSlots;

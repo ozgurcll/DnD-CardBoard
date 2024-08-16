@@ -37,7 +37,7 @@ MonoBehaviour:
   - {fileID: -1010119020, guid: fc0ecdb0d7f3a4f3f952d1e8f6caaccf, type: 3}
   - {fileID: -1845552358, guid: fc0ecdb0d7f3a4f3f952d1e8f6caaccf, type: 3}
   cardIcon: {fileID: 21300000, guid: 3ac62b945a47f4f51af2f89cb9efd0e7, type: 3}
-  actionCost: 2
+  mana: 5
   range: 5
   evoSlots:
   - {fileID: 42332914, guid: 2ea801f08916f4a32af8ec108666f922, type: 3}
@@ -51,9 +51,9 @@ MonoBehaviour:
   damage: 1
   shield: 0
   heal: 0
-  haveStatus: 0
-  statusTurn: 0
-  statusDamage: 0
-  statusEffect: {fileID: 0}
+  haveStatus: 1
+  statusTurn: 3
+  statusDamage: 4
+  statusEffect: {fileID: 9186420135051992655, guid: 6661b9421adcd4c0fb0f097b244cd09d, type: 3}
   cardEffect: {fileID: 5020120316560742001, guid: c4ed38c72957f2241ad144a1614956d9, type: 3}
   cardDamageEffect: {fileID: 1141330259687333427, guid: cae99fd1a0d5648cc87ea43acf277558, type: 3}

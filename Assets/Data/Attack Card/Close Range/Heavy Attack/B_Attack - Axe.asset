@@ -60,3 +60,4 @@ MonoBehaviour:
   statusDamage: 0
   statusEffect: {fileID: 0}
   cardEffect: {fileID: 8205763835223205524, guid: 854d7f219381f4711b8836d7360ca09c, type: 3}
+  cardDamageEffect: {fileID: 2944396702758532163, guid: e190bf97c041e58448af6b043116cba0, type: 3}

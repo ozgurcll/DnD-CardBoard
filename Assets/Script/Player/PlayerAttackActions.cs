@@ -29,8 +29,6 @@ public class PlayerAttackActions : MonoBehaviour
 
             if (IsEnemyInGrid(hit) && player.stats.isAttack)
             {
-                UpdateEnemyStatus(hit);
-
                 ApplyDamageEnemy(hit);
             }
 
@@ -38,7 +36,7 @@ public class PlayerAttackActions : MonoBehaviour
                 if (hit.collider.gameObject.CompareTag("Player") && player.stats.isAttack)
                 {
                     UpdatePlayerStatus(hit);
-                    // ApplyBuffPlayer(hit);
+                    ApplyBuffPlayer(hit);
                 }
         }
         return hit;
@@ -87,8 +85,14 @@ public class PlayerAttackActions : MonoBehaviour
 
     private void ApplyDamageEnemy(RaycastHit hit)
     {
+        if (player.stats.currentManaPoint < player.cardManager.selectedCard.cardData.mana)
+        {
+            return;
+        }
+        UpdateEnemyStatus(hit);
         player.stats.isAttack = false;
         player.uI.attackImage.gameObject.SetActive(false);
+        player.uI.DownManaPoint();
 
         player.cardActions.ApplyCardEffects(hit); // Düşmana Tıkladığımız Zaman Kart Efekti
 
@@ -97,23 +101,22 @@ public class PlayerAttackActions : MonoBehaviour
         player.cardManager.UseCard(slotIndex);
     }
 
-    // private void ApplyBuffPlayer(RaycastHit hit)
-    // {
-    //     player.stats.isAttack = false;
-    //     player.uI.attackImage.gameObject.SetActive(false);
+    private void ApplyBuffPlayer(RaycastHit hit) // DAHADA GELİŞTİRİLECEK
+    {
+        player.stats.isAttack = false;
+        player.uI.attackImage.gameObject.SetActive(false);
 
-    //     CardActions.instance.ApplyCardEffects(hit); // Düşmana Tıkladığımız Zaman Kart Efekti
+        CardActions.instance.ApplyCardEffects(hit); // Düşmana Tıkladığımız Zaman Kart Efekti
 
-    //     StartCoroutine(ApplyHitEffect(hit)); // Düşmana Tıkladığımız Zaman Kırmızı Beyaz Titreşim Efekti
-    //     int slotIndex = Array.IndexOf(player.cardManager.cardSlots, player.cardManager.selectedCard.transform.parent);
-    //     player.cardManager.UseCard(slotIndex);
-    // }
+        StartCoroutine(ApplyHitEffect(hit)); // Düşmana Tıkladığımız Zaman Kırmızı Beyaz Titreşim Efekti
+        int slotIndex = Array.IndexOf(player.cardManager.cardSlots, player.cardManager.selectedCard.transform.parent);
+        player.cardManager.UseCard(slotIndex);
+    }
 
     private void UpdateEnemyStatus(RaycastHit hit)
     {
         EnemyStats enemy = hit.collider.gameObject.GetComponentInChildren<EnemyStats>();
         Status_UI[] enemyStatusUI = hit.collider.gameObject.GetComponentsInChildren<Status_UI>();
-
         // İlk boş slotu bul
         if (player.cardManager.selectedCard.cardData.haveStatus)
             for (int i = 0; i < enemyStatusUI.Length; i++)

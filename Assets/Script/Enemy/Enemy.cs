@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
 {
     GridPosition gridPosition;
     public CharacterStats stats;
-    EnemyUI enemyUI;
+    public EnemyUI enemyUI;
 
     public int movePoints = 3; // Her turda belirli hareket hakkı
     public int currentMovePoints;

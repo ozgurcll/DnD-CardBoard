@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
 
     public void StartPlayerTurn()
     {
+        Debug.Log("Player Turn");
         DecreaseAndDamagePerTurn();
         player.playerMove.CheckMoveDirection();
         player.uI.ResetActionsUI();
@@ -125,7 +126,7 @@ public class GameManager : MonoBehaviour
                     enemy.stats.TakeDamage(damage);
 
                     status.status.ApplyStatusEffect();
-                    StartCoroutine(ApplyHitEffect(enemies[i]));
+                    StartCoroutine(ApplyHitEffect(enemies[i])); // Hata:Düşman öldüğünde hata veriyor fakat çalışmaya devam ediyor düşman sahneden silinmesiyle alakalı olabilir.
 
                     status.DecreaseTurn();
                 }
@@ -177,7 +178,7 @@ public class GameManager : MonoBehaviour
             elapsed += Time.deltaTime;
             float t = Mathf.Clamp01(elapsed / duration);
 
-            enemy.transform.position = Vector3.Lerp(originalPosition, targetPosition, t);
+            enemy.transform.position = Vector3.Lerp(originalPosition, targetPosition, t); //Hata:Düşman öldüğünde bu satır çalışıyor ve hata veriyor.
             enemy.GetComponentInChildren<SpriteRenderer>().material.color = Color.Lerp(originalColor, targetColor, t);
             yield return null;
         }

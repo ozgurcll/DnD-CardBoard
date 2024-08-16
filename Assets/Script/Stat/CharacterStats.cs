@@ -23,6 +23,7 @@ public class CharacterStats : MonoBehaviour
 {
     [Header("Action Control")]
     public Stat actionPoint;
+    public Stat manaPoint;
     public bool isAction;
     public bool isAttack;
 
@@ -67,6 +68,7 @@ public class CharacterStats : MonoBehaviour
     // private int shockDamage;
     public int currentHealth;
     public int currentActionPoint;
+    public int currentManaPoint;
 
     public System.Action onHealthChanged;
     public bool isDead { get; private set; }
@@ -78,6 +80,7 @@ public class CharacterStats : MonoBehaviour
         critPower.SetDefaultValue(150);
         currentHealth = maxHealth.GetValue();
         currentActionPoint = actionPoint.GetValue();
+        currentManaPoint = manaPoint.GetValue();
     }
     protected virtual void Update()
     {
@@ -123,6 +126,7 @@ public class CharacterStats : MonoBehaviour
 
     public int GetMaxHealthValue() => maxHealth.GetValue() + vitality.GetValue() * 5;
     public int GetActionPoints() => actionPoint.GetValue();
+    public int GetManaPoints() => manaPoint.GetValue();
 
 
     public virtual void IncreaseHealthBy(int _Amount)
@@ -162,11 +166,11 @@ public class CharacterStats : MonoBehaviour
 
         return false;
     }
-    public void KillEntity()
-    {
-        if (!isDead)
-            Die();
-    }
+    // public void KillEntity() LAVA DÜŞTÜĞÜNDE ÖL BOŞLUĞA DÜŞTÜĞÜNDE ÖL
+    // {
+    //     if (!isDead)
+    //         Die();
+    // }
 
 
     protected int CalculateCriticalDamage(int _damage)

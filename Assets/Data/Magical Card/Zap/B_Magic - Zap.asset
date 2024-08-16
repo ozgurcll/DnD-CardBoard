@@ -37,7 +37,7 @@ MonoBehaviour:
   - {fileID: -1010119020, guid: fc0ecdb0d7f3a4f3f952d1e8f6caaccf, type: 3}
   - {fileID: -1845552358, guid: fc0ecdb0d7f3a4f3f952d1e8f6caaccf, type: 3}
   cardIcon: {fileID: 21300000, guid: 2456dd2824f5ec540830760922f5bac6, type: 3}
-  actionCost: 2
+  mana: 3
   range: 5
   evoSlots:
   - {fileID: 42332914, guid: 2ea801f08916f4a32af8ec108666f922, type: 3}

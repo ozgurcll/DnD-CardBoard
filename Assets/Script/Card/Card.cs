@@ -43,7 +43,7 @@ public class Card : MonoBehaviour
     public GameObject statusEffect;
     public GameObject cardDamageEffect;
     #endregion
-    public int actionCostValue;
+    public int manaValue;
 
     public int currentRange;
 
@@ -121,8 +121,8 @@ public class Card : MonoBehaviour
         cardiconImage.sprite = cardData.cardIcon;
         range = cardData.range;
         currentRange = range;
-        actionCost.text = cardData.actionCost.ToString();
-        actionCostValue = cardData.actionCost;
+        actionCost.text = cardData.mana.ToString();
+        manaValue = cardData.mana;
 
         cardDamage = cardData.damage;
         cardHeal = cardData.heal;
@@ -176,101 +176,6 @@ public class Card : MonoBehaviour
         }
 
         player?.CardRange(currentRange);
-    }
-
-    private void ApplyCardEffect(RaycastHit hit)
-    {
-        GameObject cardEffect = Instantiate(cardData.cardEffect, player.transform.position, Quaternion.identity);
-
-        if (cardData.cardEffect != null)
-        {
-            Effects throwableItem = cardData.cardEffect.GetComponent<Effects>();
-
-            if (throwableItem == null)
-            {
-                Debug.LogError("Throwable item is null");
-                throwableItem = cardData.cardEffect.AddComponent<Effects>();
-            }
-            throwableItem.SetTarget(hit.collider.transform.GetComponent<Enemy>());
-        }
-
-    }
-
-    public void ApplyCardEffects(RaycastHit hit)
-    {
-        // Kartın türüne ve hasar türüne göre efektleri uygula
-        switch (cardData.cardType)
-        {
-            case CardType.Attack:
-                ApplyAttackEffect(hit);
-                break;
-            case CardType.Defense:
-                ApplyDefenseEffect();
-                break;
-            case CardType.Magic:
-                ApplyMagicEffect(hit);
-                break;
-        }
-    }
-
-    private void ApplyAttackEffect(RaycastHit hit)
-    {
-        GameObject cardEffect = Instantiate(cardData.cardEffect, player.transform.position, Quaternion.identity);
-
-        if (cardEffect != null)
-        {
-            Effects throwableItem = cardEffect.GetComponent<Effects>();
-
-            if (throwableItem == null)
-            {
-                Debug.LogError("Throwable item is null");
-                throwableItem = cardEffect.AddComponent<Effects>();
-            }
-            throwableItem.SetTarget(hit.collider.transform.GetComponent<Enemy>());
-        }
-        // Saldırı efektleri burada uygulanacak
-        // Örnek olarak, bir düşmana hasar vermek
-        // Düşman hedefini belirleyin ve hasarı uygulayın
-    }
-
-    private void ApplyDefenseEffect()
-    {
-        GameObject cardEffect = Instantiate(cardData.cardEffect, player.transform.position, Quaternion.identity);
-        cardEffect.transform.SetParent(player.transform);
-        cardEffect.transform.position = new Vector3(player.transform.position.x, -.5f, player.transform.position.z);
-
-
-        player.stats.maxHealth.AddModifier(cardHeal);
-
-        Destroy(cardEffect, 2f);
-
-
-        // Savunma efektleri burada uygulanacak
-        // Örnek olarak, oyuncuya kalkan eklemek
-        // Oyuncuya kalkanı ekleyin
-    }
-
-
-
-    private void ApplyMagicEffect(RaycastHit hit)
-    {
-        GameObject cardEffect = Instantiate(cardData.cardEffect, player.transform.position, Quaternion.identity);
-
-        if (cardEffect != null)
-        {
-            Effects throwableItem = cardEffect.GetComponent<Effects>();
-
-            if (throwableItem == null)
-            {
-                Debug.LogError("Throwable item is null");
-                throwableItem = cardEffect.AddComponent<Effects>();
-            }
-            throwableItem.SetTarget(hit.collider.transform.GetComponent<Enemy>());
-        }
-
-        // Büyü efektleri burada uygulanacak
-        // Örnek olarak, bir iyileştirme veya özel büyü efekti uygulamak
-        // Oyuncuya veya düşmana büyüyü uygulayın
     }
 
     public void ResetRange() => player.CardRange(-1);
