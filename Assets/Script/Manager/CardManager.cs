@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class CardManager : MonoBehaviour
 {
     public static CardManager instance;
+    public CardActions cardActions;
 
     public CardData[] allCards;
     public GameObject cardPrefab;
@@ -30,6 +31,8 @@ public class CardManager : MonoBehaviour
         {
             instance = this;
         }
+
+        cardActions = GetComponent<CardActions>();
     }
 
     private void Start()
@@ -37,6 +40,7 @@ public class CardManager : MonoBehaviour
         InitializeCards();
         PlaceSelectedCardsInSlots();
     }
+   
 
     private void InitializeCards()
     {

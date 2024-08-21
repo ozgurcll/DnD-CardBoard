@@ -4,28 +4,15 @@ using UnityEngine;
 
 public class CardActions : MonoBehaviour
 {
-    public static CardActions instance;
+
     private Player player;
     public CardData cardData;
 
     public float speed = 8f;
 
-    private void Awake()
-    {
-        if (instance != null)
-        {
-            Destroy(instance.gameObject);
-        }
-        else
-        {
-            instance = this;
-        }
-    }
-
-
     private void Start()
     {
-        player = PlayerManager.instance.player;
+        player = GameManager.instance.player;
     }
 
     public void ApplyCardEffects(RaycastHit hit)

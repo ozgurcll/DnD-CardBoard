@@ -72,7 +72,7 @@ public class CardVisuals : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         }
         else
         {
-            PlayerManager.instance.player.CardRange(-1);
+            GameManager.instance.player.CardRange(-1);
             CardManager.instance.selectedCard = null;
             currentlyClickedCard = null;
         }

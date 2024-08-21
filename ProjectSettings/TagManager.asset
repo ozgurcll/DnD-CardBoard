@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - FxTemporaire
+  - Portal
   layers:
   - Default
   - TransparentFX

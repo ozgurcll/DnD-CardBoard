@@ -106,7 +106,7 @@ public class PlayerAttackActions : MonoBehaviour
         player.stats.isAttack = false;
         player.uI.attackImage.gameObject.SetActive(false);
 
-        CardActions.instance.ApplyCardEffects(hit); // Düşmana Tıkladığımız Zaman Kart Efekti
+        player.cardActions.ApplyCardEffects(hit); // Düşmana Tıkladığımız Zaman Kart Efekti
 
         StartCoroutine(ApplyHitEffect(hit)); // Düşmana Tıkladığımız Zaman Kırmızı Beyaz Titreşim Efekti
         int slotIndex = Array.IndexOf(player.cardManager.cardSlots, player.cardManager.selectedCard.transform.parent);

@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
         stats = GetComponent<CharacterStats>();
 
         cardManager = CardManager.instance;
-        cardActions = CardActions.instance;
+        cardActions = CardManager.instance.cardActions;
     }
 
     public void CardRange(int range)

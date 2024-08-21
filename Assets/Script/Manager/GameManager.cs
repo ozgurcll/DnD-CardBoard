@@ -7,8 +7,9 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-
     public Player player;
+
+    public OpenPortal[] portals;
     public List<Enemy> enemies;
 
     public GameMode currentMode = GameMode.PlayerTurn;
@@ -26,11 +27,17 @@ public class GameManager : MonoBehaviour
         }
 
         AddEnemiesToList();
+        AddPortalsToList();
     }
 
     private void AddEnemiesToList()
     {
         enemies.AddRange(FindObjectsOfType<Enemy>());
+    }
+
+    private void AddPortalsToList()
+    {
+        portals = FindObjectsOfType<OpenPortal>();
     }
 
     public void StartPlayerTurn()
@@ -109,34 +116,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void DecreaseTurn()
-    {
-        for (int i = enemies.Count - 1; i >= 0; i--)
-        {
-            Enemy enemy = enemies[i];
-            int damage;
-
-            Status_UI[] enemyStatus = enemy.GetComponentsInChildren<Status_UI>();
-
-            foreach (Status_UI status in enemyStatus)
-            {
-                if (status.IsSlotFilled())
-                {
-                    damage = status.GetDamage();
-                    enemy.stats.TakeDamage(damage);
-
-                    status.status.ApplyStatusEffect();
-                    StartCoroutine(ApplyHitEffect(enemies[i])); // Hata:Düşman öldüğünde hata veriyor fakat çalışmaya devam ediyor düşman sahneden silinmesiyle alakalı olabilir.
-
-                    status.DecreaseTurn();
-                }
-            }
-        }
-    }
-
     public void RemoveToDieEnemy()
     {
         enemies.RemoveAll(e => e.stats.isDead);
+        if (enemies.Count == 0)
+        {
+            foreach (OpenPortal portal in portals)
+            {
+                portal.PortalActivated();
+                player.stats.actionPoint.AddModifier(999);
+            }
+        }
     }
 
     public bool IsAction() => player.stats.isAction;

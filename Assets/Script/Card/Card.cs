@@ -50,7 +50,7 @@ public class Card : MonoBehaviour
 
     private void Start()
     {
-        player = FindObjectOfType<Player>();
+        player = GameManager.instance.player;
     }
 
     public void Setup(CardData _cardData)

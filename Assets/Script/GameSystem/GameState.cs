@@ -51,5 +51,5 @@ public class GameState : GameManager
         yield return StartCoroutine(EnemyTurnRoutine());
     }
 
-    private GameObject MovementDirectionImage() => PlayerManager.instance.player.uI.movementDirectionUI;
+    private GameObject MovementDirectionImage() => player.uI.movementDirectionUI;
 }
