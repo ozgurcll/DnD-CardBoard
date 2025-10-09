@@ -18,7 +18,7 @@ public class GridBehavior : MonoBehaviour
         GenerateGrid();
     }
 
-    private void GenerateGrid()
+    public void GenerateGrid()
     {
         for (int i = 0; i < columns; i++)
         {

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CardActions : MonoBehaviour
 {
-
     private Player player;
     public CardData cardData;
 

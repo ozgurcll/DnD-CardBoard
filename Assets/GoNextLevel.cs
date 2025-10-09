@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class GoNextLevel : MonoBehaviour
 {
+    public int nextLevel;
     private void OnTriggerEnter(Collider other)
     {
+       
         if (other.GetComponent<Player>())
         {
-            Debug.Log("Next Level");
+            LevelManager.Instance.LoadNextArena(nextLevel);
         }
     }
 }

@@ -22,7 +22,7 @@ public class PlayerGridCalculation : MonoBehaviour
         UpdateHighlightedObjects(playerX, playerY, currentRange);
     }
 
-    private void UpdateHighlightedObjects(int playerX, int playerY, int range)
+    public void UpdateHighlightedObjects(int playerX, int playerY, int range)
     {
         highlightedObjects.Clear();
 

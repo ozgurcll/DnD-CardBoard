@@ -18,7 +18,6 @@ public class EnemyUI : MonoBehaviour
         healthFill = GetComponentInChildren<Canvas>().transform.Find("HealthUI").Find("HealthFill").GetComponent<Image>();
         health = GetComponentInChildren<Canvas>().transform.Find("HealthUI").GetComponentInChildren<TextMeshProUGUI>();
         canvas.enabled = false;
-        UpdateHealthUI();
     }
 
     public void UpdateHealthUI()

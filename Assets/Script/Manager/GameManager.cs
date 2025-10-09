@@ -94,7 +94,6 @@ public class GameManager : MonoBehaviour
                     status.DecreaseTurn();
 
                     totalDamage += status.GetDamage();
-                    Debug.Log(totalDamage);
                 }
             }
 
